@@ -1,26 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import StatCard from './Components/StatCard.tsx'
+import Header from './Components/Header.tsx'
+import SearchField from './Components/SearchField.tsx'
+import Task from './Components/Task.tsx'
+import NewTaskForm from './Components/NewTaskForm.tsx'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <StatCard 
+        title='TOTAL TASKS'
+        count={4}
+        icon = {null}
+        msg = 'All recorded items'
+      />
+      <SearchField />
+      <NewTaskForm />
+      <Task 
+        id = {1}
+        title = 'task 1'
+      />
     </div>
-  );
+  )
 }
 
 export default App;
