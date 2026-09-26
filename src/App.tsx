@@ -1,27 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import StatCard from './Components/StatCard.tsx'
+import './Components/css/Header.css';
+import './Components/css/statCard.css'
+import StatCardsContainer from './Components/StatCardsContainer.tsx'
 import Header from './Components/Header.tsx'
 import SearchField from './Components/SearchField.tsx'
-import Task from './Components/Task.tsx'
 import NewTaskForm from './Components/NewTaskForm.tsx'
+import TaskContainer from './Components/TasksContainer.tsx';
+import { TaskProvider } from './context/TaskContext.tsx';
 function App() {
   return (
     <div>
-      <Header />
-      <StatCard 
-        title='TOTAL TASKS'
-        count={4}
-        icon = {null}
-        msg = 'All recorded items'
-      />
+      <Header/>
+      <StatCardsContainer />
       <SearchField />
-      <NewTaskForm />
-      <Task 
-        id = {1}
-        title = 'task 1'
-      />
+      <TaskProvider> 
+        <NewTaskForm />
+        <TaskContainer />
+      </TaskProvider>
+    
     </div>
   )
 }

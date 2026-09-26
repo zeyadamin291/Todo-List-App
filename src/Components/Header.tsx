@@ -1,11 +1,11 @@
 import React from "react";
 import ToggleTheme from './ToggleTheme'
-const Header = () =>{
+const Header = () => {
     return (
-        <div>
-            <h1>Tasweef Electrony</h1>
-            <ToggleTheme />
-        </div>
+        <header>
+                <h1>Tasweef Electrony</h1>
+                <ToggleTheme />
+        </header>
     )
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
 import { MdOutlineDarkMode } from "react-icons/md";
 
-const ToggleTheme = () =>{
+const ToggleTheme = () => {
     return (
-        <button>
-            <MdOutlineDarkMode></MdOutlineDarkMode>
+        <button className="themeButton">
+            <MdOutlineDarkMode className="themeIcon"></MdOutlineDarkMode>
             <span>Dark</span>
         </button>
     )
