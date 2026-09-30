@@ -9,3 +9,13 @@
 .statCardsContainer li{
     list-style: none;
 }
+
+.statIcon {
+    width: 1.5rem;
+    /* height: 2.5rem; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

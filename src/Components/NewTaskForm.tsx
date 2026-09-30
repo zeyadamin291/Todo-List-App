@@ -1,6 +1,7 @@
-import { IoAddCircleOutline } from "react-icons/io5";
+import { IoAdd } from "react-icons/io5";
 import React, { useContext } from "react";
 import { TaskContext } from "../context/TaskContext";
+import './css/NewTaskform.css'
 
 const NewTaskForm = () => {
 
@@ -48,7 +49,7 @@ const NewTaskForm = () => {
             />
 
             <button type="submit">
-                <IoAddCircleOutline />
+                <IoAdd className="addIcon" />
                 Add Task
             </button>
 

@@ -1,18 +1,19 @@
 
 header{
+    height: 46px;
     display: flex;
-    gap: 1rem;
+    /* gap: 10rem; */
     align-items: center;
     justify-content: space-around;
     margin: auto;
-    padding: 1rem 0;
+    padding: .7rem 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.076);
 }
 
 header div{
     display : flex;
     align-items: center;
-    gap: 50rem;
+    /* gap: 50rem; */
     justify-content: center;
     padding: 0 1rem;
     margin: 0 auto;
@@ -31,7 +32,7 @@ header h1{
     background-color: #F8F9FA;
     border: solid 1px #E9ECEF;
     
-    padding: 12px 14px;
+    padding: 10px 12px;
     display: flex;
     gap: 12px;
     align-items: center;
@@ -46,7 +47,8 @@ header h1{
 }
 
 .themeIcon{
-    font-size: 24px;
+    font-size: 20px;
+    color: black;
 }
 
 .themeButton span{

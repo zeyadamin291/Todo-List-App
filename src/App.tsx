@@ -11,14 +11,20 @@ import { TaskProvider } from './context/TaskContext.tsx';
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <StatCardsContainer />
-      <SearchField />
-      <TaskProvider> 
-        <NewTaskForm />
+      <TaskProvider>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '1rem'
+        }}>
+          <NewTaskForm />
+          <SearchField />
+        </div>
         <TaskContainer />
       </TaskProvider>
-    
     </div>
   )
 }

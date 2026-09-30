@@ -1,0 +1,25 @@
+.searchContainer{
+    width: 20rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchContainer input{
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .94rem;
+}
+
+.searchIcon{
+    font-weight: 600;
+    font-size: larger;
+    color: rgba(85, 79, 101, 0.614);
+}
+
+.searchContainer input:focus{
+    outline: none;
+}

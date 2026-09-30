@@ -1,7 +1,7 @@
 import StatCard from "./StatCard"
 import './css/statCardsContainer.css'
 import { LuSquareMenu } from "react-icons/lu";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaRegCheckCircle } from "react-icons/fa";
 import { FaBusinessTime } from "react-icons/fa";
 
 const StatCardsContainer = () => {
@@ -9,23 +9,23 @@ const StatCardsContainer = () => {
         <ul className="statCardsContainer">
             <li>
                 <StatCard title="TOTAL TASKS" count={0} msg="All recorded items" color="#4F46E5"
-                icon = { 
-                <div className="statIcon">
-                    <LuSquareMenu />
-                </div>
-                } />
+                    icon={
+                        <div>
+                            <LuSquareMenu className="statIcon" />
+                        </div>
+                    } />
             </li>
             <li>
                 <StatCard title="TOTAL TASKS" count={0} msg="All recorded items" color="#10B981" icon={
-                    <div className="statIcon">
-                        <FaCheckCircle />
+                    <div >
+                        <FaRegCheckCircle className="statIcon" />
                     </div>
                 } />
             </li>
             <li>
                 <StatCard title="TOTAL TASKS" count={0} msg="All recorded items" color="#F59E0B" icon={
-                    <div className="statIcon">
-                        <FaBusinessTime />
+                    <div>
+                        <FaBusinessTime className="statIcon" />
                     </div>
                 } />
             </li>

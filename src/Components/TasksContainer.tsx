@@ -1,6 +1,10 @@
 import React, { useContext } from "react";
 import { TaskContext } from "../context/TaskContext";
+import { FaRegTrashAlt } from "react-icons/fa";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
+
+import './css/tasksContainer.css'
 const TaskContainer = () => {
 
     const context = useContext(TaskContext);
@@ -12,15 +16,29 @@ const TaskContainer = () => {
     const { tasks } = context;
 
     return (
-        <div>
-            {tasks.map((task, index) => (
-                <div key={index} className="task">
-                    <input type="checkbox" />
-                    <h3>{task.title}</h3>
-                    <p>{task.description}</p>
+        <section className="tasksContainer">
+            <div className="tasksContainerHeader">
+                <div>
+                    <p>Tasks</p>
+                    <span className="tasksNumber">0</span>
                 </div>
-            ))}
-        </div>
+                <p>Click checkbox to complete</p>
+            </div>
+            <div className="tasks">
+                {tasks.map((task, index) => (
+                    <div key={index} className="task">
+                        <div className="liftSide">
+                            <input type="checkbox" />
+                            <p>{task.title}</p>
+                        </div>
+                        <div className="rightSide">
+                            <MdKeyboardArrowRight />
+                            <FaRegTrashAlt />
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
 };
 

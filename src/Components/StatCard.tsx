@@ -14,17 +14,20 @@ const StatCard = ({ title, count = 0,
     icon, msg = '', color }: StatCardProps) => {
     return (
         <div className="statCard" style={{borderLeft: `3px solid ${color}` }}>
-            <p id="title">{title}</p>
-            <div>
+            <p className="statTitle">{title}</p>
+            <div className="stats">
                 <div>
                     {count}
                     <span className="completedPercentage"></span>
                 </div>
-                <span className="icon">
+                <span className="icon" style={{
+                    color: color,
+                    backgroundColor: `color-mix(in srgb, ${color} 10%, transparent)`
+                }}>
                     {icon}
                 </span>
             </div>
-            <p id="msg">{msg}</p>
+            <p className="msg">{msg}</p>
         </div>
     )
 }
